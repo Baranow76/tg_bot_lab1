@@ -37,7 +37,7 @@ public class TelegramBotService {
             handleCallbackQuery(update.callbackQuery());
         }
     }
-
+    //изменение 1
     private void sendStartMessage(Long chatId) {
         SendMessage request = new SendMessage(chatId, "Привет! Я могу отправить тебе случайную шутку.");
         request.replyMarkup(new InlineKeyboardMarkup(new InlineKeyboardButton("Получить шутку").callbackData("/joke")));
